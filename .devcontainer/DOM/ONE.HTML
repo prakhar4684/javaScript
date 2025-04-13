@@ -3,29 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOM Manipulation</title>
-    <style>
-        .bg-black{
-            background-color: black;
-            color: #fff;
-        }
-    </style>
+    <title>DOM</title>
 </head>
-<body style="background-color: black;">
-    <div class="bg-black">
-        <h1 id="title" class="heading">DOM manipulation learing on chai or code <span style="display: none;">test text</span></h1>
-        <h2>my name is Prakhar Shukla</h2>
-        <h2>my name is Prakhar Shukla</h2>
-        <h2>my name is Prakhar Shukla</h2>
-        <h2>my name is Prakhar Shukla</h2>
-        <p>Lorem ipsum dolor sit amet.</p>
-        <input type="password" name="" id="">
-        <ul>
-            <li class="list">one</li>
-            <li class="list">two</li>
-            <li class="list">three</li>
-            <li class="list">four</li>
-        </ul>
+<body style="background-color: black; color: white;">
+    <div class="parent">
+        <div class="day">sunday</div>
+        <div class="day">monday</div>
+        <div class="day">tuesday</div>
+        <div class="day">wednesday</div>
     </div>
+    <script>
+        const parent = document.querySelector('.parent')
+       // console.log(parent)
+       // console.log(parent.children)
+       // console.log(parent.children[2].innerHTML)
+       // for(let i=0;i<parent.children.length;i++){
+         //  parent.children[i].style.color="red"
+        //   parent.children[i].style.padding="10px"
+           
+           
+       // }
+       // console.log(parent.children.firstElementChild)
+     //   console.log(parent.children.lastElementChild)
+        const dayone= document.querySelector('.day')
+      //  console.log(dayone)
+      //  console.log(dayone.parentElement)
+      //  console.log(dayone.nextElementSibling)
+            console.log("NODES ",parent.childNodes)
+    </script>
 </body>
 </html>
